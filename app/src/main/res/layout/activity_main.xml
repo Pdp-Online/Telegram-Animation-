@@ -20,8 +20,7 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:layout_marginTop="60dp"
-            android:layout_gravity="center"
-            app:lottie_fileName="telegram.json"/>
+            android:layout_gravity="center" />
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager_main"

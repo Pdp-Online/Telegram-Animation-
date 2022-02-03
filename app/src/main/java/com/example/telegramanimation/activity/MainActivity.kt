@@ -51,39 +51,21 @@ class MainActivity() : AppCompatActivity() {
                 positionOffsetPixels: Int
             ) {
                 when(position) {
-                    0 -> {
-                        lottieView.setAnimation("telegram.json")
-                        lottieView.playAnimation()
-                    }
-
-                    1 -> {
-                        lottieView.setAnimation("telegram_speed.json")
-                        lottieView.playAnimation()
-                    }
-
-                    2 -> {
-                        lottieView.setAnimation("telegram_free.json")
-                        lottieView.playAnimation()
-                    }
-
-                    3 -> {
-                        lottieView.setAnimation("telegram_powerful.json")
-                        lottieView.playAnimation()
-                    }
-
-                    4 -> {
-                        lottieView.setAnimation("telegram_security.json")
-                        lottieView.playAnimation()
-                    }
-
-                    5 -> {
-                        lottieView.setAnimation("telegram_cloud_based.json")
-                        lottieView.playAnimation()
-                    }
+                    0 -> { lottieView.setAnimation("telegram.json") }
+                    1 -> { lottieView.setAnimation("telegram_speed.json") }
+                    2 -> { lottieView.setAnimation("telegram_free.json") }
+                    3 -> { lottieView.setAnimation("telegram_powerful.json") }
+                    4 -> { lottieView.setAnimation("telegram_security.json") }
+                    5 -> { lottieView.setAnimation("telegram_cloud_based.json") }
                 }
+                lottieView.playAnimation()
+
+
+
             }
 
             override fun onPageSelected(position: Int) {
+
 
             }
 
@@ -96,6 +78,8 @@ class MainActivity() : AppCompatActivity() {
 
         tabLayout = findViewById(R.id.tab_main)
         tabLayout!!.setupWithViewPager(viewPager)
+
+
 
 
 
